@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './EventCard.css'; // Import the CSS file for styles
 
 function EventCard(props) {
@@ -15,9 +16,9 @@ function EventCard(props) {
           <p className="card-text">
             Some quick example text to build on the 
           </p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
+          <Link  to="/prices" className="btn btn-primary">
+            {props.link}
+          </Link>
         </div>
       </div>
     </div>

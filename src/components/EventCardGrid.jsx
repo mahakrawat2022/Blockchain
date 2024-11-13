@@ -15,50 +15,62 @@ function EventCardGrid() {
         <EventCard
           heading="Diljit's Concert"
           img="/DiljitConcert.jpg"
+          link="Price"
         />
         <EventCard
           heading="Coldplay Concert"
           img="/coldplayConcert.jpg"
+          link="Price"
         />
         <EventCard
           heading="Doon Music Festival "
           img="/doonMusicFestivalConcert.jpg"
+          link="Price"
         />
         <EventCard
           heading="IPL"
           img="/ipl.jpg"
+          link="Price"
         />
         <EventCard
           heading="Diljit's Concert"
           img="/DiljitConcert.jpg"
+          link="Price"
         />
         <EventCard
           heading="Diljit's Concert"
           img="/DiljitConcert.jpg"
+          link="Price"
         />
         <EventCard
           heading="Diljit's Concert"
           img="/DiljitConcert.jpg"
+          link="Price"
         />
         <EventCard
           heading="Diljit's Concert"
           img="/DiljitConcert.jpg"
+          link="Price"
         />
         <EventCard
           heading="Diljit's Concert"
           img="/DiljitConcert.jpg"
+          link="Price"
         />
         <EventCard
           heading="Diljit's Concert"
           img="/DiljitConcert.jpg"
+          link="Price"
         />
         <EventCard
           heading="Diljit's Concert"
           img="/DiljitConcert.jpg"
+          link="Price"
         />
         <EventCard
           heading="Diljit's Concert"
           img="/DiljitConcert.jpg"
+          link="Price"
         />
       </div>
     </>

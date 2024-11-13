@@ -11,6 +11,8 @@ import Admin from './components/Admin';
 import User from './components/User';
 import AdminPanel from './components/AdminPanel';
 import PurchasedTickets from './components/PurchasedTickets';
+import Prices from './components/Prices';
+import Ticket from './components/Ticket';
 
 
 
@@ -27,8 +29,9 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/user" element={<User />} />
         <Route path="/yourTickets" element={<PurchasedTickets />} />
-
+        <Route path="/prices" element={<Prices />} />
         <Route path="/adminPanel" element={<AdminPanel />} />
+        <Route path="/ticket" element={<Ticket />} />
       </Routes>
     </Router>
   );

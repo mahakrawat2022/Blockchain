@@ -13,6 +13,7 @@ function EventCard(props) {
         />
         <div className="card-body">
           <h5 className="card-title">{props.heading}</h5>
+          <h6>Price : $5</h6>
           <p className="card-text">
             Some quick example text to build on the 
           </p>

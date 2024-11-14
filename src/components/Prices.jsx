@@ -1,4 +1,3 @@
-// Prices.js
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,6 +7,7 @@ function Prices() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    // Hardcoded JSON data
     const data = {
       images: [
         { imgUrl: 'https://stirring-salmiakki-15af11.netlify.app/ICC_Corporate_Spirit_LowContrast_RGB300.jpg' },
@@ -20,6 +20,7 @@ function Prices() {
         { imgUrl: 'https://stirring-salmiakki-15af11.netlify.app/ICC_Test_LowContrast_RGB300.jpg' },
       ],
     };
+
     setImages(data.images);
   }, []);
 
@@ -37,6 +38,7 @@ function Prices() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
+      {/* Main Image and Content Section */}
       <div
         style={{
           display: 'flex',
@@ -55,17 +57,13 @@ function Prices() {
             style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
           />
         </div>
-
         <div style={{ flex: '1', width: '100%' }}>
           <h2>Concert Details</h2>
-          <p>
-            Join us for an unforgettable night with Diljit Dosanjh! Get ready for electrifying performances and an
-            amazing concert experience.
-          </p>
+          <p>Join us for an unforgettable night with Diljit Dosanjh!</p>
           <p>
             <strong>Date:</strong> December 20, 2023<br />
             <strong>Venue:</strong> Music Hall, Downtown City<br />
-            <strong>Price:</strong> $50 - $200
+            <strong>Price:</strong> $5
           </p>
         </div>
       </div>
@@ -75,15 +73,8 @@ function Prices() {
         <p>Choose NFT of your choice</p>
       </div>
 
-      <div
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          gap: '10px',
-          maxWidth: '900px',
-        }}
-      >
+      {/* NFT Images Section */}
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px', maxWidth: '900px' }}>
         {images.map((image, index) => (
           <img
             key={index}
@@ -116,7 +107,7 @@ function Prices() {
           }}
         >
           Continue
-        </button> 
+        </button>
       </div>
     </div>
   );
